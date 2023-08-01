@@ -20,6 +20,7 @@ export default class AuthorizeBtnContainer extends React.Component {
     const AuthorizeBtn = getComponent("authorizeBtn")
     let login = localStorage.getItem("authorized")
     if (login !='{}' && !authSelectors.authorized().size){
+      console.log(login)
       let key = authorizableDefinitions.get(0).keys().next().value
       let scheme = authorizableDefinitions.get(0).get(key)
       let password = JSON.parse(login)[key]

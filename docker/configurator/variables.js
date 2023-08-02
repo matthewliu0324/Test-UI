@@ -19,6 +19,10 @@ const standardVariables = {
     type: "array",
     name: "urls"
   },
+  LINKS:{
+    type: "array",
+    name: "links"
+  },
   URLS_PRIMARY_NAME: {
     type: "string",
     name: "urls.primaryName"

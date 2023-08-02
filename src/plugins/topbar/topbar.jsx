@@ -15,7 +15,8 @@ export default class Topbar extends React.Component {
 
   constructor(props, context) {
     super(props, context)
-    this.URLS = ["https://www.trusetics.com:5678/js/api-docs","https://petstore.swagger.io/v2/swagger.json"]
+    const {LINKS} = this.props.getConfigs()
+    this.URLS = LINKS
     this.state = { url: this.URLS[0], selectedIndex: 0 }
   }
 
